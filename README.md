@@ -1,5 +1,5 @@
 # Ecomagister
-Educational game based on Submersivo Game Studio idea to teaching sustainability for kids
+Educational game based on Submersivo Game Studio idea for teaching sustainability to kids
 
 ![](https://i.imgur.com/pWTuOUW.png)
 
