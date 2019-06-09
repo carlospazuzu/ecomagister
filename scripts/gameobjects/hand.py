@@ -25,19 +25,19 @@ class Hand(pygame.sprite.Sprite):
     def handle_input(self, event):
         if event.type == JOYAXISMOTION:
             # LEFT AND RIGHT
-            if event.axis == 0 and event.value < 0:
+            if event.axis == 0 and int(event.value) == -1:
                 self.move_left = True
-            if event.axis == 0 and event.value > 0:   
+            if event.axis == 0 and int(event.value) == 1:   
                 self.move_right = True
-            if event.axis == 0 and event.value == 0:
+            if event.axis == 0 and int(event.value) == 0:
                 self.move_left = False
                 self.move_right = False
             # UP AND DOWN
-            if event.axis == 1 and event.value < 0:
+            if event.axis == 1 and int(event.value) == -1:
                 self.move_up = True
-            if event.axis == 1 and event.value > 0:   
+            if event.axis == 1 and int(event.value) == 1:
                 self.move_down = True
-            if event.axis == 1 and event.value == 0:
+            if event.axis == 1 and int(event.value) == 0:
                 self.move_up = False
                 self.move_down = False
         if event.type == JOYBUTTONDOWN:
